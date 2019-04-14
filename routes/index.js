@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function (req, res, next) {
   console.log("request received");
-  await setTimeout(function () {
+  setTimeout(function () {
     console.log('Blah blah blah blah extra-blah');
   }, 120000).then(() => {
     res.render('index', { title: 'Express' });
